@@ -78,7 +78,7 @@ describe("CCIPLocalSimulator Contract", function () {
 
     it("Should register and lookup Alice's CCNS correctly", async function () {
         try {
-            const alicePrivateKey = "PRIVATE_KEY";
+            const alicePrivateKey = "PRIVATE_KEY"; // removed even though it was a Dummy key.
             const aliceSigner = new ethers.Wallet(alicePrivateKey, ethers.provider);
             console.log("This is Alice Signer address:", aliceSigner.address);
             const [deployer] = await ethers.getSigners();
